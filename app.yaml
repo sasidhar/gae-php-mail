@@ -9,6 +9,10 @@ handlers:
   script: mail.php
   login: required
 
+- url: /mail_sent
+  script: mail_sent.php
+  login: required
+
 - url: /.*
   script: index.php
 

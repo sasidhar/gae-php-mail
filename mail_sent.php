@@ -4,8 +4,8 @@
 
     $user = getUser();
 
-    if(!is_null($user)) {
-        header("Location: /mail");
+    if(is_null($user)) {
+        header("Location: /");
     }
 
     //Include header
@@ -14,7 +14,9 @@
 ?>
 
     <div class="container col-lg-4 col-lg-push-4 col-md-6 col-md-push-3 col-sm-8 col-sm-push-2">
-        <p><a href="<?php echo getLoginUrl(); ?>">Login</a> to your GMail account to test Google App Engine - PHP Mail API.</p>
+        <h3>Mail sent</h3>
+        <p>Check your mail account.</p>
+        <p><a href="/mail">Test Again</a></p>
     </div>
 
 <?php

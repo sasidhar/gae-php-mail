@@ -39,8 +39,6 @@
                 <li><a href="https://github.com/sasidhar/gae-php-mail/fork">Fork on Github</a></li>
                 <?php if(is_null($user)) { ?>
                     <li><a href="<?php echo getLoginUrl(); ?>">Login</a></li>
-                <?php } else { ?>
-                    <li><a href="<?php echo getLogoutUrl(); ?>">Logout <?php echo $user->getNickName(); ?></a></li>
                 <?php } ?>
             </ul>
         </div><!-- /.navbar-collapse -->
