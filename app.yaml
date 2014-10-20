@@ -1,0 +1,14 @@
+application: gae-php-mail
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+
+- url: /mail
+  script: mail.php
+  login: required
+
+- url: /.*
+  script: index.php
+
